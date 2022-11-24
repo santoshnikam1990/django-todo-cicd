@@ -6,6 +6,9 @@ A simple todo app built with django
 To get this repository, run the following command inside your git enabled terminal
 ```bash
 $ git clone https://github.com/shreys7/django-todo.git 
+
+
+
 It would be best practice always, if we create a new enviornment before running the application. 
 Before creating a new enviornment check python3 is installed or not and also pip module need to install.
 follow the below steps for installing python3, pip module and creating a new environment.
