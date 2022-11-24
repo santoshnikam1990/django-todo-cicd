@@ -21,6 +21,8 @@ activate your virtual environment : # source appenv/bin/activate   (virtual envi
 Now go to the directory django-todo where we need to perform all the tasks.
 ```
 You will need django to be installed in you computer to run this app. Head over to https://www.djangoproject.com/download/ for the download guide
+# pip install Django  
+if any warnings we can upgarde the pip module from lower version to higher version, check warnings.
 
 Once you have downloaded django, go to the cloned repo directory and run the following command
 
