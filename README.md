@@ -70,3 +70,25 @@ Cheers and Happy Coding :)
 TRY WITH DOCKER CONTAINER :
 Prerequistes:
   Latest version of docker
+$ docker --version
+$ systemctl enable docker.service
+$ systemctl start docker.service
+$ docker ps
+$ vi Dockerfile   (recomended to staty in same directory of django-todo)
+write inside docker file below scripts
+  FROM python:3
+  RUN pip install django==3.2
+  COPY . .
+  RUN python manage.py migrate
+  CMD ["python","manage.py","runserver","0.0.0.0:8000"]
+  Save and exit (esc :wq)
+  Now buitl the docker image form Dockerfile
+  
+$ docker build . -t todo-app
+$ docker ps
+$ docker run -p 8000:8000 <container ID>  ## (-p) user for port expose with hots port to container port ##
+check application is running with public ip of your machine:8000 (e.g. http://13.127.10*.15*:8000/)
+Control + C for stop the running application
+if you want to run the application in background 
+$ docker run -d -p 8000:8000 <container ID> ## (-d) user for demon run , which allow the application to run in background ##
+Now we have successfully ran todo-app in docker container also, Thanks...
