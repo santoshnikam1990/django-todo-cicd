@@ -15,7 +15,7 @@ follow the below steps for installing python3, pip module and creating a new env
 install python 3.9 as per your linux distribution
 install pip module (for python3.9)
 install virtual enviornment (venv for RHEL & centos)"# pip3.9 install virtualenv"
-create a virtual environment # python3 -m venv environmentnameasperyourchoice
+create a virtual environment ## python3 -m venv environmentnameasperyourchoice
                              # python3 -m venv appenv (in may case i created a virtual environment as "appenv")
 activate your virtual environment : # source appenv/bin/activate   (virtual environment name as "appenv" followed by /bin/activate)
 Now go to the directory django-todo where we need to perform all the tasks.
@@ -32,11 +32,16 @@ $ python manage.py makemigrations
 
 This will create all the migrations file (database migrations) required to run this App.
 
+Related issues:
+            "SQLite 3.9.0 or later is required (found 3.7.17)."
+Solution: 
+          sqlite 3.9.0 mobue need to download, install and seup before running database migartion, solution has been found on below link.
+          https://programmerah.com/solved-django-core-exceptions-improperlyconfigured-sqlite-3-9-0-or-later-is-required-found-3-7-17-29493/
+                   
 Now, to apply this migrations run the following command
 ```bash
 $ python manage.py migrate
 ```
-
 One last step and then our todo App will be live. We need to create an admin user to run this App. On the terminal, type the following command and provide username, password and email for the admin user
 ```bash
 $ python manage.py createsuperuser
@@ -47,7 +52,14 @@ That was pretty simple, right? Now let's make the App live. We just need to star
 ```bash
 $ python manage.py runserver
 ```
-
 Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
 
+Now the application is running in local host, if you want access from anywhere run as 
+$ python manage.py runserver 0.0.0.0:8000
+Now the application running in foreground, if you want run this as background run as 
+$ python manage.py runserver 0.0.0.0:8000 &       ### (you can use nohup at the begining of the command for an output)
+if you want to check the process is running on 8000 port
+$ lsof -i:8000
+If you want to kill the process 
+$ kill -9  4467    (" in my case 4467 is Process ID of the process from above command")
 Cheers and Happy Coding :)
