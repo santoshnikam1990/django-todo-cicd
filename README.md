@@ -37,6 +37,10 @@ Related issues:
 Solution: 
           sqlite 3.9.0 mobue need to download, install and seup before running database migartion, solution has been found on below link.
           https://programmerah.com/solved-django-core-exceptions-improperlyconfigured-sqlite-3-9-0-or-later-is-required-found-3-7-17-29493/
+          
+ Afetr all this done make a list requirements, which will help you futufre when it need to recall.
+ 
+ $ pip freeze > requirements.txt  (This is an optional step not mendotary)
                    
 Now, to apply this migrations run the following command
 ```bash
@@ -63,3 +67,6 @@ $ lsof -i:8000
 If you want to kill the process 
 $ kill -9  4467    (" in my case 4467 is Process ID of the process from above command")
 Cheers and Happy Coding :)
+TRY WITH DOCKER CONTAINER :
+Prerequistes:
+  Latest version of docker
