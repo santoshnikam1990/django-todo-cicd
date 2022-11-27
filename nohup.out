@@ -1,0 +1,38 @@
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+todos.Todo: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the TodosConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+
+System check identified 1 issue (0 silenced).
+[26/Nov/2022 14:23:50] "POST /todos/add/ HTTP/1.1" 302 0
+[26/Nov/2022 14:23:50] "GET /todos/ HTTP/1.1" 200 5324
+[26/Nov/2022 14:24:14] "POST /todos/add/ HTTP/1.1" 302 0
+[26/Nov/2022 14:24:14] "GET /todos/ HTTP/1.1" 200 5945
+[26/Nov/2022 14:43:15] "POST /todos/add/ HTTP/1.1" 302 0
+[26/Nov/2022 14:43:16] "GET /todos/ HTTP/1.1" 200 6737
+[26/Nov/2022 14:43:16] "GET /static/css/style.css HTTP/1.1" 304 0
+[26/Nov/2022 15:33:38] code 400, message Bad request version ('À\x14À')
+[26/Nov/2022 15:33:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[26/Nov/2022 15:39:21] "GET /todos/ HTTP/1.1" 200 6737
+[26/Nov/2022 15:39:21] "GET /static/css/style.css HTTP/1.1" 304 0
+[26/Nov/2022 15:43:03] "GET / HTTP/1.1" 302 0
+[26/Nov/2022 15:43:03] "GET /todos HTTP/1.1" 301 0
+[26/Nov/2022 15:43:03] "GET /todos/ HTTP/1.1" 200 6737
+[26/Nov/2022 15:43:04] "GET /static/css/style.css HTTP/1.1" 200 225
+Not Found: /favicon.ico
+[26/Nov/2022 15:43:05] "GET /favicon.ico HTTP/1.1" 404 2570
+[26/Nov/2022 15:43:23,990] - Broken pipe from ('49.205.113.196', 56010)
+
+[26/Nov/2022 15:43:23,995] - Broken pipe from ('49.205.113.196', 56960)
+
+  File "manage.py", line 16
+    ) from exc
+         ^
+SyntaxError: invalid syntax
+  File "manage.py", line 16
+    ) from exc
+         ^
+SyntaxError: invalid syntax

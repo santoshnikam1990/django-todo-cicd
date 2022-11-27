@@ -1,0 +1,356 @@
+    1  cd 
+    2  cd raki/practice/projects/
+    3  cd django-todo/
+    4  ls
+    5  ls -al
+    6  vi nohup.out 
+    7  cat db.sqlite3
+    8  PuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTY
+    9  cd todos
+   10  ls -al
+   11  cat views.py 
+   12  exit
+   13  yum update -y
+   14  which git
+   15  yum install git -y
+   16  which python
+   17  python --version
+   18  yum install python3.9 -y
+   19  cat /etc/os-release
+   20  sudo yum install gcc openssl-devel bzip2-devel libffi-devel
+   21  ls
+   22  ls -a
+   23  cd /opt
+   24  wget https://www.python.org/ftp/python/3.9.6/Python-3.9.6.tgz
+   25  tar xzf Python-3.9.6.tgz
+   26  ls 
+   27  cd Python-3.9.6/
+   28  ./configure --enable-optimization
+   29  python -v
+   30  python3.9 -v
+   31  nake altinstall
+   32  make altinstall
+   33  python -v
+   34  python3.9 -v
+   35  python3.9 -V
+   36  python --version
+   37  python3 --version
+   38  python3.9 --version
+   39  python3 --version
+   40  ls
+   41  cd ..
+   42  pwd
+   43  cd ..
+   44  cd
+   45  mkdir raki-practice
+   46  ls
+   47  rm -rf raki-practice/
+   48  ls
+   49  mkdir raki
+   50  cd raki
+   51  mkdir practice
+   52  cd practice/
+   53  mkdir projects
+   54  cd projects/
+   55  git init
+   56  git clone https://github.com/rakisahu/django-todo.git
+   57  ls -al
+   58  yum install python-pip -y
+   59  pip -version
+   60  pip --version
+   61  pip3 --version
+   62  pip3.9 install virtualenv
+   63  pip3 install virtualenv
+   64  python3 -m venv appenv
+   65  source appenv/bin/activate
+   66  ls
+   67  cd django-todo/
+   68  pip install django
+   69  python manage.py makemigrations
+   70  python manage.py migrate
+   71  python manage.py createsuperuser
+   72  python manage.py runserver
+   73  cd /opt
+   74  ls
+   75  cd Python-3.9.6/
+   76  yum groupinstall “Development Tools” -y
+   77  yum install wget -y
+   78  yum groupinstall “Development Tools” -y
+   79  cd ~
+   80  mkdir sqlite3
+   81  cd sqlite3/
+   82  wget https://www.sqlite.org/2022/sqlite-autoconf-3400000.tar.gz
+   83  tat xvfz sqlite-autoconf-3400000.tar.gz 
+   84  tar xvfz sqlite-autoconf-3400000.tar.gz 
+   85  cd sqlite-autoconf-3400000/
+   86  ./configure
+   87  make
+   88  make install
+   89  sqlite3 --version
+   90  cd
+   91  cd raki/
+   92  cd practice/
+   93  ls
+   94  cd projects/
+   95  ls
+   96  cd django-todo/
+   97  python manage.py makemigrations
+   98  python manage.py migrate
+   99  python manage.py createsuperuser
+  100  python manage.py runserver
+  101  whereis sqlite3
+  102  /usr/bin/sqlite3 –verssion
+  103  mv /usr/bin/sqlite3 /usr/bin/sqlite3_3.7.17
+  104  ln -s /usr/local/bin/sqlite3 /usr/bin/sqlite3
+  105  python
+  106  export LD_LIBRARY_PATH="/usr/local/lib/"
+  107  python Python 3.6.8
+  108  python Python 3.9.0
+  109  python Python 3.7.17
+  110  python Python 3.7.10
+  111  python
+  112  python manage.py runserver
+  113  python manage.py makemigrations
+  114  python manage.py migrate
+  115  python manage.py createsuperuser
+  116  python manage.py runserver
+  117  python manage.py runserver 0.0.0.0:8000
+  118  ls
+  119  vi todoApp/
+  120  ls -al
+  121  cd todoApp/
+  122  ls
+  123  vi settings.py 
+  124  python manage.py runserver 0.0.0.0:8000
+  125  cd ..
+  126  python manage.py runserver 0.0.0.0:8000
+  127  vi /todaApp/settings.py
+  128  cd todoApp/
+  129  vi settings.py 
+  130  cd ..
+  131  python manage.py runserver 0.0.0.0:8000
+  132  nohup python manage.py runserver 0.0.0.0:8000 &
+  133  lsof -i 8001
+  134  lsof -i:8001
+  135  lsof -i:8000
+  136  yum update -y
+  137  cd
+  138  cd raki/practice/projects/django-todo/
+  139  ls
+  140  cd todoApp/
+  141  ls
+  142  vi settings.py 
+  143  ps
+  144  nohup python manage.py runserver 0.0.0.0:8000 &
+  145  vi settings.py 
+  146  nohup python manage.py runserver 0.0.0.0:8000 &
+  147  python manage.py runserver 0.0.0.0:8000
+  148  cd ..
+  149  nohup python manage.py runserver 0.0.0.0:8000 &
+  150  nohup python manage.py runserver 0.0.0.0:8000 &
+  151  cd todoApp/
+  152  vi settings.py 
+  153  cd ..
+  154  pyhton manage.py runserver
+  155  python manage.py runserver
+  156  ls
+  157  vi manage.py 
+  158  cd todoApp/
+  159  ls
+  160  cd ..
+  161  vi manage.py 
+  162  python manage.py runserver
+  163  vi manage.py 
+  164  python manage.py runserver
+  165  python manage.py makemigrations
+  166  source appenv/bin/activate
+  167  ls
+  168  cd ..
+  169  source appenv/bin/activate
+  170  cd django-todo/
+  171  python manage.py runserver
+  172  ls
+  173  python
+  174  cd ..
+  175  python
+  176  whereis sqlite3
+  177  /usr/bin/sqlite3 –verssion
+  178  exit() exit
+  179  exit
+  180  cd ..
+  181  exit () exit
+  182  deactivate
+  183  python
+  184  whereis sqlite3
+  185  mv /usr/bin/sqlite3 /usr/bin/sqlite3_3.7.17
+  186  python3
+  187  python3
+  188  ls
+  189  cd projects/
+  190  ls
+  191  source appenv/bi/activate
+  192  source appenv/bin/activate
+  193  cd django-todo/
+  194  python manage.py runserver
+  195  python manage.py makemigrations
+  196  python
+  197  python
+  198  deactivate
+  199  pythhon
+  200  python
+  201  python3
+  202  source appenv/bin/activate
+  203  ls
+  204  cd ..
+  205  source appenv/bin/activate
+  206  pyhton
+  207  python
+  208  whereis sqlite3
+  209  ln -s /usr/local/bin/sqlite3 /usr/bin/sqlite3
+  210  whereis sqlite3
+  211  python
+  212  export LD_LIBRARY_PATH="/usr/local/lib/"
+  213  python
+  214  python manage.py makemigrations
+  215  cd django-todo/
+  216  python manage.py makemigrations
+  217  python manage.py runserver
+  218  python manage.py runserver 0.0.0.0:8000
+  219  ls
+  220  lsof -i:8000
+  221  cd todoApp/
+  222  vi settings.py 
+  223  cd ..
+  224  python manage.py runserver 0.0.0.0:8000
+  225  python manage.py runserver 0.0.0.0:8000
+  226  lsof -i:8000
+  227  kill 4878
+  228  lsof -i:8000
+  229  kill 9 4878
+  230  lsof -i:8000
+  231  python manage.py runserver 0.0.0.0:8000
+  232  cd todoApp/
+  233  vi settings.py 
+  234  cd ..
+  235  lsof -i:8000
+  236  kill -9 4878
+  237  lsof -i:8000
+  238  python manage.py runserver 0.0.0.0:8000
+  239  python manage.py runserver 0.0.0.0:8000
+  240  lsof -i:8000
+  241  kill -9 4971
+  242  python manage.py runserver
+  243  python manage.py runserver 0.0.0.0:8000
+  244  lsof -i:8000
+  245  kill -9 5021
+  246  python manage.py runserver 0.0.0.0:8000
+  247  docker
+  248  yum search docker
+  249  yum update -y
+  250  yum search docker
+  251  yum search all docker
+  252  deactivate
+  253  docker
+  254  yum install docker.io
+  255  yum search docker
+  256  yum install -y yum-utils
+  257  yum-config-manager     --add-repo     https://download.docker.com/linux/rhel/docker-ce.repo
+  258  yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+  259  yum list docker-ce --showduplicates | sort -r
+  260  clear
+  261  cat /etc/os-release
+  262  sudo yum search docker
+  263  pwd
+  264  cd ..
+  265  yum upadte -y
+  266  yum search docker
+  267  docker
+  268  yum-config-manager --disable docker-ce-stable
+  269  yum-config-manager --save --setopt=docker-ce-stable.skip_if_unavailable=true
+  270  yum search docker
+  271  yum info docker
+  272  yum install docker
+  273  docker
+  274  docker --version
+  275  docker ps
+  276  docker ps -a
+  277  systemctl start docker
+  278  docker ps -a
+  279  systemctl stop docker
+  280  systemctl enable docker.service
+  281  systemctl start docker.service
+  282  vi Dockerfile
+  283  exit
+  284  exit
+  285  cd
+  286  ls
+  287  cd raki/practice/projects/
+  288  cd django-todo/
+  289  cd ..
+  290  ls
+  291  source appenv/bin/activate
+  292  pyhton manage.py runserver 0.0.0.0:8000 &
+  293  python manage.py runserver 0.0.0.0:8000 &
+  294  cd django-todo/
+  295  python manage.py runserver 0.0.0.0:8000 &
+  296  sqlite --version
+  297  sqlite3 --version
+  298  python
+  299  export LD_LIBRARY_PATH="/usr/local/lib/"
+  300  python
+  301  python manage.py runserver 0.0.0.0:8000 &
+  302  python manage.py runserver 0.0.0.0:8000&
+  303  lsof -i:8000
+  304  ls
+  305  ls -al
+  306  cd
+  307  ls
+  308  cd raki/practice/projects/
+  309  cd django-todo/
+  310  vi Dockerfile
+  311  docker build . -t todo-app
+  312  docker ps
+  313  docker run -p 8000:8000 9eb5df266318
+  314  docker run -p 8000:8000 3ecb051def7b
+  315  docker run -p 8000:8000 3ecb051def7b
+  316  docker ps
+  317  docker ps -a
+  318  docker run -p 8000:8000 7bfd1e31ca56
+  319  docker build . -t todo-app
+  320  vi Dockerfile
+  321  docker build . -t todo-app
+  322  ls
+  323  source appenv/bin/activate
+  324  cd ..
+  325  source appenv/bin/activate
+  326  cd django-todo/
+  327  pip freeze > requirements1.txt
+  328  ls
+  329  exit
+  330  ls
+  331  cd
+  332  ls
+  333  cd raki/practice/projects/
+  334  ls
+  335  cd django-todo/
+  336  ls
+  337  docker build . -t todo-appnew
+  338  docker run -p 8000:8000 a117f6aa2d86
+  339  docker run -d -p 8000:8000 a117f6aa2d86
+  340  docker ps
+  341  docker attach optimistic_euclid
+  342  docker exec -it optimistic_euclid
+  343  docker exec -it optimistic_euclid /bin/bash
+  344  docker ps
+  345  docker run -d -p 8000:8000 a117f6aa2d86
+  346  docekr ps
+  347  docker ps
+  348  docker exec -it a117f6aa2d86 /bin/bash
+  349  docker exec -it nice_maxwell /bin/bash
+  350  docker ps
+  351  docker run -d -p 8000:8000 a117f6aa2d86
+  352  docker ps -a
+  353  docker exec -it nice_maxwell /bin/bash
+  354  clear
+  355  history
+  356  history | cat > history.txt
