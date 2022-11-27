@@ -24,7 +24,7 @@ You will need django to be installed in you computer to run this app. Head over 
 # pip install Django  
 if any warnings we can upgarde the pip module from lower version to higher version, check warnings.
 
-Once you have downloaded django, go to the cloned repo directory and run the following command
+Once you have downloaded django, go to the cloned repo directory ($ cd django_todo) and run the following command
 in my case the cloned repo is django-todo
 ```bash
 $ python manage.py makemigrations
