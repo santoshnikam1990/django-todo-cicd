@@ -6,26 +6,45 @@ A simple todo app built with django
 To get this repository, run the following command inside your git enabled terminal
 ```bash
 $ git clone https://github.com/shreys7/django-todo.git 
-
-
+```
 
 It would be best practice always, if we create a new enviornment before running the application. 
 Before creating a new enviornment check python3 is installed or not and also pip module need to install.
 follow the below steps for installing python3, pip module and creating a new environment.
 install python 3.9 as per your linux distribution
 install pip module (for python3.9)
-install virtual enviornment (venv for RHEL & centos)"# pip3.9 install virtualenv"
-create a virtual environment ## python3 -m venv environmentnameasperyourchoice
-                             # python3 -m venv appenv (in may case i created a virtual environment as "appenv")
-activate your virtual environment : # source appenv/bin/activate   (virtual environment name as "appenv" followed by /bin/activate)
-Now go to the directory django-todo where we need to perform all the tasks.
+install virtual enviornment (venv for RHEL & centos)
+```bash
+$ pip3.9 install virtualenv
 ```
+create a virtual environment 
+```bash
+$ python3 -m venv environmentnameasperyourchoice
+```
+```bash
+$ python3 -m venv appenv
+```
+(in may case i created a virtual environment as "appenv")
+
+activate your virtual environment : 
+```bash
+$ source appenv/bin/activate 
+```
+(virtual environment name as "appenv" followed by /bin/activate)
+Now go to the directory django-todo where we need to perform all the tasks.
 You will need django to be installed in you computer to run this app. Head over to https://www.djangoproject.com/download/ for the download guide
-# pip install Django  
+```bash
+$ pip install Django  
+```
 if any warnings we can upgarde the pip module from lower version to higher version, check warnings.
 
-Once you have downloaded django, go to the cloned repo directory ($ cd django_todo) and run the following command
-in my case the cloned repo is django-todo
+Once you have downloaded django, go to the cloned repo directory 
+
+```bash 
+$ cd django_todo 
+``` 
+and run the following command in my case the cloned repo is django-todo
+
 ```bash
 $ python manage.py makemigrations
 ```
@@ -39,8 +58,10 @@ Solution:
           https://programmerah.com/solved-django-core-exceptions-improperlyconfigured-sqlite-3-9-0-or-later-is-required-found-3-7-17-29493/
           
  Afetr all this done make a list requirements, which will help you futufre when it need to recall.
- 
- $ pip freeze > requirements.txt  (This is an optional step not mendotary)
+ ```bash
+ $ pip freeze > requirements.txt
+ ```
+ (This is an optional step not mendotary)
                    
 Now, to apply this migrations run the following command
 ```bash
@@ -59,18 +80,34 @@ $ python manage.py runserver
 Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
 
 Now the application is running in local host, if you want access from anywhere run as 
+```bash
 $ python manage.py runserver 0.0.0.0:8000
+```
 Now the application running in foreground, if you want run this as background run as 
-$ python manage.py runserver 0.0.0.0:8000 &       ### (you can use nohup at the begining of the command for an output)
+```bash
+$ python manage.py runserver 0.0.0.0:8000 &
+```
+### (you can use nohup at the begining of the command for an output)
 if you want to check the process is running on 8000 port
+```bash
 $ lsof -i:8000
+```
 If you want to kill the process 
-$ kill -9  4467    (" in my case 4467 is Process ID of the process from above command")
+```bash
+$ kill -9  4467
+```
+(" in my case 4467 is Process ID of the process from above command")
+
 Cheers and Happy Coding :)
+
+
 TRY WITH DOCKER CONTAINER :
+
 Prerequistes:
   Latest version of docker
+```bash
 $ docker --version
+```
 $ systemctl enable docker.service
 $ systemctl start docker.service
 $ docker ps
