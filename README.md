@@ -111,3 +111,7 @@ Now Create First Admin User  ----> as per your choice   -----> click on Save and
 You will get url as per you machine public IP address like ---> http://13.234.76.25:8080/   (Here my public IP address is 13.234.76.25)
 Click on Save and Finish
 Now jenkins started on your browser.....Good luck
+Now try to run the todo-app via jenkins
+Goto jenkins dashboard
+create a node ----> Name it as per your choice ---> select as permanent agent
+Now configure it
