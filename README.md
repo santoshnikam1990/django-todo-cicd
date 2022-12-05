@@ -174,13 +174,24 @@ enable the jenkins first --> ```$ systemctl enable jenkins``` ----->> iw will en
 Now start jenkins   -------> ```$ systemctl start jenkins```  ----->> Now check jenkins started, check with $ systemctl status jenkins.
 
 Connect to http://pubicIP_of_your_machine:8080  from your browser. You will be able to access Jenkins through its management interface:
+
 As prompted, enter the password found in /var/lib/jenkins/secrets/initialAdminPassword. by ```$ cat /var/lib/jenkins/secrets/initialAdminPassword```   ---> copy the alphanumeric password and paste in Administrator Passowrd box.
+
 Click on ----> install suggested plugins ----> it will install all basic and required plugins for a CI-CD pipeline project
+
 Now Create First Admin User  ----> as per your choice   -----> click on Save and Continue
+
 You will get url as per you machine public IP address like ---> http://13.234.76.25:8080/   (Here my public IP address is 13.234.76.25)
+
 Click on Save and Finish
+
 Now jenkins started on your browser.....Good luck
+
 Now try to run the todo-app via jenkins
+
 Goto jenkins dashboard
+
 create a node ----> Name it as per your choice ---> select as permanent agent
+
 Now configure it
+
