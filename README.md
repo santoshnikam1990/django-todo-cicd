@@ -108,36 +108,63 @@ Prerequistes:
 ```bash
 $ docker --version
 ```
+```bash
 $ systemctl enable docker.service
+```
+```bash
 $ systemctl start docker.service
+```
+```bash
 $ docker ps
-$ vi Dockerfile   (recomended to staty in same directory of django-todo)
-write inside docker file below scripts
+```
+```bash
+$ vi Dockerfile   (# recomended to staty in same directory of django-todo)
+```
+## write inside docker file below scripts
+  ```bash
   FROM python:3
   RUN pip install django==3.2
   COPY . .
   RUN python manage.py migrate
   CMD ["python","manage.py","runserver","0.0.0.0:8000"]
-  Save and exit (esc :wq)
+  ```
+    Save and exit (esc :wq)
   Now buitl the docker image form Dockerfile
-  
-$ docker build . -t todo-app  -----> (Here (.) is for current directory and -t for a tag name of your image)
+```bash  
+$ docker build . -t todo-app        ## -----> (Here (.) is for current directory and -t for a tag name of your image)
+```
+```bash
 $ docker ps
+```
+```bash
 $ docker run -p 8000:8000 <container ID>  ## (-p) user for port expose with hots port to container port ##
+```
 check application is running with public ip of your machine:8000 (e.g. http://13.127.10*.15*:8000/)
 Control + C for stop the running application
 if you want to run the application in background 
-$ docker run -d -p 8000:8000 <container ID> ## (-d) user for demon run , which allow the application to run in background ##
+```bash
+$ docker run -d -p 8000:8000 <container ID>      ## (-d) user for demon run , which allow the application to run in background ##
+```
 Now we have successfully ran todo-app in docker container also, Thanks...
 Continueing...
 lets install jenkins via docker.
 Requirements:
   Docker should be installed in your machine. (As we have already installed in above steps)
+```bash
 $ docker
-$ docker pull jenkins/jenkins (Here jenkins/jenkins is the image name of jenkins tool, you can user ($ docker search jenkins) to serach jenkins from docker hub, it will list available images)
-Now check for images are available locally $ docker images    ----> Here you will get image IDs.
-docker run -d -p 8080:8080 jenkinsimageID   ----> now jenkins is runing in a container.
-Check for running containers ----> $ docker ps -a
+```
+```bash
+$ docker pull jenkins/jenkins
+```
+(Here jenkins/jenkins is the image name of jenkins tool, you can user ($ docker search jenkins) to serach jenkins from docker hub, it will list available images)
+Now check for images are available locally 
+```bash
+$ docker images         ----> Here you will get image IDs.
+````
+```bash
+$ docker run -d -p 8080:8080 jenkinsimageID   ----> now jenkins is runing in a container.
+```
+Check for running containers ----> ```bash $ docker ps -a ```
 Check status of jenkins ---> $ systemctl status jenkins ---->> it will show loaded but incative.
 enable the jenkins first --> $ systemctl enable jenkins ----->> iw will enable jenkins and ready to start.
 Now start jenkins   -------> $ systemctl start jenkins  ----->> Now check jenkins started, check with $ systemctl status jenkins.
