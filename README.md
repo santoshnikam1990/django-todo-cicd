@@ -175,7 +175,10 @@ Now start jenkins   -------> ```$ systemctl start jenkins```  ----->> Now check 
 
 Connect to http://pubicIP_of_your_machine:8080  from your browser. You will be able to access Jenkins through its management interface:
 
-As prompted, enter the password found in /var/lib/jenkins/secrets/initialAdminPassword. by ```$ cat /var/lib/jenkins/secrets/initialAdminPassword```   ---> copy the alphanumeric password and paste in Administrator Passowrd box.
+As prompted, enter the password found in /var/lib/jenkins/secrets/initialAdminPassword. by
+```bash
+$ cat /var/lib/jenkins/secrets/initialAdminPassword         ---> copy the alphanumeric password and paste in Administrator Passowrd box.
+```   
 
 Click on ----> install suggested plugins ----> it will install all basic and required plugins for a CI-CD pipeline project
 
