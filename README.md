@@ -159,27 +159,46 @@ $ docker pull jenkins/jenkins
 (Here jenkins/jenkins is the image name of jenkins tool, you can user ($ docker search jenkins) to serach jenkins from docker hub, it will list available images)
 Now check for images are available locally 
 ```bash
-$ docker images         ----> Here you will get image IDs.
+$ docker images         
+----> Here you will get image IDs.
 ````
 ```bash
-$ docker run -d -p 8080:8080 jenkinsimageID   ----> now jenkins is runing in a container.
+$ docker run -d -p 8080:8080 jenkinsimageID   
+----> now jenkins is runing in a container.
 ```
 ```bash 
-$ docker ps -a ```          ----> Check for running containers 
+$ docker ps -a 
+```
+----> Check for running containers 
 
-Check status of jenkins ---> ``` $ systemctl status jenkins ``` ---->> it will show loaded but incative.
+Check status of jenkins --->
+```bash
+$ systemctl status jenkins
+``` 
+---->> it will show loaded but incative.
 
-enable the jenkins first --> ```$ systemctl enable jenkins``` ----->> iw will enable jenkins and ready to start.
+enable the jenkins first --> 
+```bash
+$ systemctl enable jenkins
+``` 
+----->> iw will enable jenkins and ready to start.
 
-Now start jenkins   -------> ```$ systemctl start jenkins```  ----->> Now check jenkins started, check with $ systemctl status jenkins.
+Now start jenkins   -------> 
+```bash
+$ systemctl start jenkins
+``` 
+----->> Now check jenkins started, check with 
+```bash
+$ systemctl status jenkins
+```
 
 Connect to http://pubicIP_of_your_machine:8080  from your browser. You will be able to access Jenkins through its management interface:
 
 As prompted, enter the password found in /var/lib/jenkins/secrets/initialAdminPassword. by
 ```bash
-$ cat /var/lib/jenkins/secrets/initialAdminPassword         ---> copy the alphanumeric password and paste in Administrator Passowrd box.
+$ cat /var/lib/jenkins/secrets/initialAdminPassword         
 ```   
-
+---> copy the alphanumeric password and paste in Administrator Passowrd box.
 Click on ----> install suggested plugins ----> it will install all basic and required plugins for a CI-CD pipeline project
 
 Now Create First Admin User  ----> as per your choice   -----> click on Save and Continue
