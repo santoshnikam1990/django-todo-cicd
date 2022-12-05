@@ -165,8 +165,8 @@ $ docker images         ----> Here you will get image IDs.
 $ docker run -d -p 8080:8080 jenkinsimageID   ----> now jenkins is runing in a container.
 ```
 ```bash 
-$ docker ps -a           ----> Check for running containers 
-```
+$ docker ps -a ```          ----> Check for running containers 
+
 Check status of jenkins ---> ``` $ systemctl status jenkins ``` ---->> it will show loaded but incative.
 
 enable the jenkins first --> ```$ systemctl enable jenkins``` ----->> iw will enable jenkins and ready to start.
